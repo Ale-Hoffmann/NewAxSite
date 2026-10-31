@@ -1,38 +1,29 @@
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import Header from "@/components/Header";
+import HeroCarousel from "@/components/HeroCarousel";
+import ServicesPanel from "@/components/ServicesPanel";
+import ProductCards from "@/components/ProductCards";
+import AboutSection from "@/components/AboutSection";
+import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
+import ContactButton from "@/components/ContactButton";
 
-// Página inicial provisória: será substituída pela landing page
+// Landing page (one page): cada seção é um componente em src/components
 export default function Home() {
   return (
-    <Box
-      component="main"
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        bgcolor: "secondary.main",
-        color: "secondary.contrastText",
-      }}
-    >
-      <Container maxWidth="md">
-        <Typography
-          variant="overline"
-          sx={{ color: "primary.main", fontWeight: 700, letterSpacing: 2 }}
-        >
-          Em construção
-        </Typography>
-        <Typography variant="h2" component="h1" gutterBottom>
-          AX Serigrafia
-        </Typography>
-        <Typography variant="h6" sx={{ opacity: 0.8, mb: 4 }}>
-          Sua ideia em estampa.
-        </Typography>
-        <Button variant="contained" size="large">
-          Simular pedido
-        </Button>
-      </Container>
-    </Box>
+    <>
+      <Header />
+      <Box component="main" id="inicio">
+        <HeroCarousel />
+        <ServicesPanel />
+        <ProductCards />
+        <AboutSection />
+        <Testimonials />
+        <CallToAction />
+      </Box>
+      <Footer />
+      <ContactButton />
+    </>
   );
 }
