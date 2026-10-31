@@ -21,7 +21,9 @@ Leia antes de implementar regras de negócio. Itens com ❓ ainda não foram dec
 
 ## Convenções
 - Interface e textos do site em **português do Brasil**.
-- Visual: preto `#111111`, vermelho `#D7262E`, branco. Use as cores do tema (`primary`, `secondary`), não valores soltos.
+- Visual: paleta inspirada na SAP (decidido em 17/10/2026): azul `#0070F2` (`primary`), azul-marinho `#1D2D3E` (`secondary`), branco. Use as cores do tema, não valores soltos.
+- Textos da landing ficam em `src/data/landing.ts`; os componentes só desenham esses dados.
+- Documentação da landing page no Obsidian: `AxSiteDocumantation/Landing Page.md`.
 - Estilize com componentes MUI e a prop `sx`; evite CSS solto.
 - Pensar primeiro no celular (mobile first).
 - Componentes da landing em `src/components/`.
